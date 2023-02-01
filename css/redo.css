@@ -2,23 +2,31 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: none;
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+  min-width: none;
   padding-top: 10px;
   padding-left: 150px;
   padding-right: 150px;
-  display: flex;
-  flex-direction: column;
   background-color: #1f2937;
   color: #fafbf9;
   height: 600px;
 }
 
+body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
 ul {
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex;
   list-style: none;
   gap: 30px;
 }
@@ -28,11 +36,11 @@ ul {
 }
 
 .header-container {
-  padding-top: 150px;
-  padding-bottom: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
   height: 100%;
   gap: 20px;
 }
@@ -47,10 +55,22 @@ ul {
 }
 
 .right-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1;
   height: 100%;
-  display: flex;
-  align-items: center;
   background-color: grey;
-  justify-content: center;
+}
+
+.container-one {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
+
+.container-two {
+  display: flex;
+  background-color: grey;
+  height: 600px;
 }
